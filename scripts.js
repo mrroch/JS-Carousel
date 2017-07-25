@@ -2,9 +2,9 @@ $(function() {
 	var carouselList = $('#carousel ul');
 
 	function changeSlide() {
-		carouselList.animate({'marginLeft':-800}, 600, moveFirstSlide); //dlaczego to działa bez '$(carouselList)'? //
+		carouselList.animate({'marginLeft':-800}, 600, moveFirstSlide);
 	}
-	setInterval(changeSlide, 3500); //co 3 sek. wykona funkcję zmieniającą slajd.*/
+	setInterval(changeSlide, 3500); 
 	
 	function moveFirstSlide() {
 		var firstItem = carouselList.find("li:first");
